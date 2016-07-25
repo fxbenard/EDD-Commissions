@@ -28,6 +28,8 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 	$payment_data = edd_get_payment_meta( $payment_id );
 	$user_info    = maybe_unserialize( $payment_data['user_info'] );
 	$cart_details = edd_get_payment_meta_cart_details( $payment_id );
+	$calc_base    = edd_get_option( 'edd_commissions_calc_base', 'subtotal' );
+	$shipping     = edd_get_option( 'edd_commissions_shipping', 'ignored' );
 
 	// loop through each purchased download and award commissions, if needed
 	foreach ( $cart_details as $download ) {
@@ -35,13 +37,13 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 		$download_id         = absint( $download['id'] );
 		$commissions_enabled = get_post_meta( $download_id, '_edd_commisions_enabled', true );
 
-		if ( 'subtotal' == edd_get_option( 'edd_commissions_calc_base', 'subtotal' ) ) {
+		if ( 'subtotal' == $calc_base ) {
 
 			$price = $download['subtotal'];
 
 		} else {
 
-			if ( 'total_pre_tax' == edd_get_option( 'edd_commissions_calc_base', 'subtotal' ) ) {
+			if ( 'total_pre_tax' == $calc_base ) {
 
 				$price = $download['price'] - $download['tax'];
 
@@ -55,9 +57,23 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 		}
 
 		if( ! empty( $download['fees'] ) ) {
-			foreach( $download['fees'] as $fee ) {
+
+			foreach( $download['fees'] as $fee_id => $fee ) {
+
+				if ( false !== strpos( $fee_id, 'shipping' ) ) {
+
+					// If we're adjusting the commission for shipping, we need to remove it from the calculation and then add it after the commission amount has been determined
+					if( 'ignored' !== $shipping ) {
+
+						continue;
+
+					}
+
+				}
+
 				$price += $fee['amount'];
 			}
+
 		}
 
 		// if we need to award a commission, and the price is greater than zero
@@ -73,7 +89,9 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 				$type = eddc_get_commission_type( $download_id );
 
 				// but if we have price variations, then we need to get the name of the variation
-				if ( edd_has_variable_prices( $download_id ) ) {
+				$has_variable_prices = edd_has_variable_prices( $download_id );
+
+				if ( $has_variable_prices ) {
 					$price_id  = edd_get_cart_item_price_id ( $download );
 					$variation = edd_get_price_option_name( $download_id, $price_id );
 				}
@@ -96,6 +114,26 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 
 					$commission_amount = eddc_calc_commission_amount( $args ); // calculate the commission amount to award
 					$currency          = $payment_data['currency'];
+
+					// If shipping is included or not included, we need to adjust the amount
+					if( ! empty( $download['fees'] ) && 'ignored' !== $shipping ) {
+
+						foreach( $download['fees'] as $fee_id => $fee ) {
+
+							if ( false !== strpos( $fee_id, 'shipping' ) ) {
+
+								// If we're adjusting the commission for shipping, we need to remove it from the calculation and then add it after the commission amount has been determined
+								if( 'include_shipping' == $shipping ) {
+
+									$commission_amount += $fee['amount'];
+
+								}
+
+							}
+
+						}
+
+					}
 
 					$commission = array(
 						'post_type'   => 'edd_commission',
@@ -120,7 +158,7 @@ function eddc_record_commission( $payment_id, $new_status, $old_status ) {
 					update_post_meta( $commission_id, '_edd_commission_payment_id', $payment_id );
 
 					// If we are dealing with a variation, then save variation info
-					if ( isset( $variation ) ) {
+					if ( $has_variable_prices && isset( $variation ) ) {
 						update_post_meta( $commission_id, '_edd_commission_download_variation', $variation );
 					}
 
@@ -207,7 +245,24 @@ function eddc_get_recipients( $download_id = 0 ) {
 	return (array) apply_filters( 'eddc_get_recipients', $recipients, $download_id );
 }
 
+/**
+ *
+ * Retrieves the commission rate for a product and user
+ *
+ * If $download_id is empty, the default rate from the user account is retrieved.
+ * If no default rate is set on the user account, the global default is used.
+ *
+ * This function requires very strict typecasting to ensure the proper rates are used at all times.
+ *
+ * 0 is a permitted rate so we cannot use empty(). We always use NULL to check for non-existent values.
+ *
+ * @param  $download_id INT The ID of the download product to retrieve the commission rate for
+ * @param  $user_id     INT The user ID to retrieve commission rate for
+ * @return $rate        INT|FLOAT The commission rate
+ */
 function eddc_get_recipient_rate( $download_id = 0, $user_id = 0 ) {
+
+	$rate = null;
 
 	// Check for a rate specified on a specific product
 	if( ! empty( $download_id ) ) {
@@ -217,28 +272,31 @@ function eddc_get_recipient_rate( $download_id = 0, $user_id = 0 ) {
 		$recipients = array_map( 'trim', explode( ',', $settings['user_id'] ) );
 		$rate_key   = array_search( $user_id, $recipients );
 
-		if( ! empty( $rates[ $rate_key ] ) ) {
+		if( isset( $rates[ $rate_key ] ) ) {
 			$rate = $rates[ $rate_key ];
-		} else {
-			$rate = 0;
 		}
 
 	}
 
 	// Check for a user specific global rate
-	if( empty( $download_id ) || empty( $rate ) ) {
+	if( ! empty( $user_id ) && ( null === $rate || '' === $rate ) ) {
 
 		$rate = get_user_meta( $user_id, 'eddc_user_rate', true );
 
-		if( empty( $rate ) ) {
-			$rate = 0;
+		if( '' === $rate ) {
+			$rate = null;
 		}
 
 	}
 
 	// Check for an overall global rate
-	if( empty( $rate ) && eddc_get_default_rate() ) {
+	if( null === $rate && eddc_get_default_rate() ) {
 		$rate = eddc_get_default_rate();
+	}
+
+	// Set rate to 0 if no rate was found
+	if( null === $rate || '' === $rate ) {
+		$rate = 0;
 	}
 
 	return apply_filters( 'eddc_get_recipient_rate', $rate, $download_id, $user_id );
@@ -712,9 +770,9 @@ function eddc_generate_payout_file( $data ) {
 add_action( 'edd_generate_payouts', 'eddc_generate_payout_file' );
 
 function eddc_generate_user_export_file( $data ) {
-	
+
 	$user_id = ! empty( $data['user_id'] ) ? intval( $data['user_id'] ) : get_current_user_id();
-	
+
 	if ( ( empty( $user_id ) || ! eddc_user_has_commissions( $user_id ) ) ) {
 		return;
 	}

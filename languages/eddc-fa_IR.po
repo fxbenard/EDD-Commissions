@@ -1,65 +1,57 @@
-# Copyright (C) 2016 Easy Digital Downloads
+# Copyright (C) 2015 Easy Digital Downloads - Commissions
 # This file is distributed under the same license as the Easy Digital Downloads - Commissions package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Digital Downloads - Commissions 3.2.10\n"
+"Project-Id-Version: Easy Digital Downloads - Commissions 3.1.2\n"
 "Report-Msgid-Bugs-To: Pippin Williamson <pippin@pippinsplugins.com>\n"
 "POT-Creation-Date: 2016-04-07 16:34:31+00:00\n"
+"PO-Revision-Date: 2016-01-14 18:08+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Pippin Williamson <pippin@pippinsplugins.com>\n"
-"Language-Team: Easy Digital Downloads <support@easydigitaldownloads.com>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
-"X-Textdomain-Support: yes\n"
 
 #: includes/EDD_C_List_Table.php:55
 msgid "View all commissions for this item"
-msgstr ""
+msgstr "مشاهده تمام کمیسیون های این آیتم"
 
 #: includes/EDD_C_List_Table.php:58
 msgid "View payment details"
-msgstr ""
+msgstr "مشاهده جزئیات پرداخت"
 
 #: includes/EDD_C_List_Table.php:70
 msgid "Accept"
-msgstr ""
+msgstr "پذیرفتن"
 
 #: includes/EDD_C_List_Table.php:72 includes/EDD_C_List_Table.php:141
 msgid "Mark as Unpaid"
-msgstr ""
+msgstr "علامت گذاری به عنوان پرداخت نشده"
 
 #: includes/EDD_C_List_Table.php:74 includes/EDD_C_List_Table.php:140
 #: includes/admin/list.php:86
 msgid "Mark as Paid"
-msgstr ""
+msgstr "علامت گذاری به عنوان پرداخت شده"
 
 #: includes/EDD_C_List_Table.php:75
 msgid "Revoke"
-msgstr ""
+msgstr "لغو"
 
 #: includes/EDD_C_List_Table.php:77
 msgid "Edit"
-msgstr ""
+msgstr "ویرایش"
 
 #: includes/EDD_C_List_Table.php:78 includes/EDD_C_List_Table.php:143
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: includes/EDD_C_List_Table.php:86
 msgid "View all commissions for this user"
-msgstr ""
+msgstr "مشاهده تمامی کمیسیون های این کاربر"
 
 #: includes/EDD_C_List_Table.php:91
 msgid "Invalid User"
@@ -67,11 +59,11 @@ msgstr ""
 
 #: includes/EDD_C_List_Table.php:107
 msgid "User"
-msgstr ""
+msgstr "کاربر"
 
 #: includes/EDD_C_List_Table.php:109
 msgid "Payment"
-msgstr ""
+msgstr "پرداخت"
 
 #: includes/EDD_C_List_Table.php:110 includes/admin/add.php:34
 #: includes/admin/customers.php:110 includes/admin/edit.php:30
@@ -79,7 +71,7 @@ msgstr ""
 #: includes/short-codes.php:244 includes/short-codes.php:307
 #: includes/short-codes.php:370
 msgid "Rate"
-msgstr ""
+msgstr "نرخ"
 
 #: includes/EDD_C_List_Table.php:111 includes/admin/add.php:43
 #: includes/admin/customers.php:161 includes/admin/edit.php:39
@@ -87,90 +79,92 @@ msgstr ""
 #: includes/class-commissions-export.php:99 includes/short-codes.php:243
 #: includes/short-codes.php:306 includes/short-codes.php:369
 msgid "Amount"
-msgstr ""
+msgstr "مبلغ"
 
 #: includes/EDD_C_List_Table.php:112
 msgid "Status"
-msgstr ""
+msgstr "وضعیت"
 
 #: includes/EDD_C_List_Table.php:113 includes/admin/widgets.php:61
 #: includes/admin/widgets.php:120 includes/class-commissions-export.php:100
 #: includes/short-codes.php:245 includes/short-codes.php:308
 #: includes/short-codes.php:371
 msgid "Date"
-msgstr ""
+msgstr "تاریخ"
 
 #: includes/EDD_C_List_Table.php:129
 msgid "All"
-msgstr ""
+msgstr "همه"
 
 #: includes/EDD_C_List_Table.php:130
 msgid "Unpaid"
-msgstr ""
+msgstr "پرداخت نشده"
 
 #: includes/EDD_C_List_Table.php:131
 msgid "Revoked"
-msgstr ""
+msgstr "لغو شده"
 
 #: includes/EDD_C_List_Table.php:132
 msgid "Paid"
-msgstr ""
+msgstr "پرداخت شده"
 
 #: includes/EDD_C_List_Table.php:142
 msgid "Mark as Revoked"
-msgstr ""
+msgstr "علامت گذاری به عنوان لغو شده"
 
 #: includes/admin/add.php:1 includes/admin/add.php:55
 #: includes/admin/list.php:60
 msgid "Add Commission"
-msgstr ""
+msgstr "افزودن کمیسیون"
 
 #: includes/admin/add.php:7 includes/admin/edit.php:12
 msgid "User ID"
-msgstr ""
+msgstr "شماره کاربر"
 
 #: includes/admin/add.php:11 includes/admin/edit.php:16
 msgid "The ID of the user that received this commission"
-msgstr ""
+msgstr "شماره کاربری که این کمیسیون را دریافت می کند"
 
 #: includes/admin/add.php:16 includes/admin/edit.php:21
 msgid "Download ID"
-msgstr ""
+msgstr "شماره دانلود"
 
 #: includes/admin/add.php:20 includes/admin/edit.php:25
 msgid "The ID of the product this commission was for"
-msgstr ""
+msgstr "شماره محصولی که این کمیسیون بابت آن پرداخت می شود"
 
 #: includes/admin/add.php:25
 msgid "Payment ID"
-msgstr ""
+msgstr "شماره پرداخت"
 
 #: includes/admin/add.php:29
 msgid "The payment ID this commission is related to (optional)."
-msgstr ""
+msgstr "شماره پرداختی که این کمیسیون مربوط به آن است (اختیاری)"
 
 #: includes/admin/add.php:38 includes/admin/edit.php:34
 msgid "The percentage rate of this commission"
-msgstr ""
+msgstr "نرخ درصدی این کمیسیون"
 
 #: includes/admin/add.php:47 includes/admin/edit.php:43
 msgid "The total amount of this commission"
-msgstr ""
+msgstr "مبلغ کل کمیسیون"
 
 #: includes/admin/class-batch-commissions-mark-paid.php:99
 #: includes/admin/class-batch-commissions-payout.php:227
+#, fuzzy
 msgid "You do not have permission to export data."
-msgstr ""
+msgstr "شما مجوز ذخیره کمیسیون ها را ندارید"
 
 #: includes/admin/class-batch-commissions-mark-paid.php:99
 #: includes/admin/class-batch-commissions-payout.php:227
 #: includes/commission-functions.php:765
 msgid "Error"
-msgstr ""
+msgstr "خطا"
 
 #: includes/admin/class-batch-commissions-mark-paid.php:110
+#, fuzzy
 msgid "Commissions marked as paid."
-msgstr ""
+msgstr "کمیسیونی برای پرداخت وجود ندارد"
 
 #: includes/admin/class-batch-commissions-payout.php:252
 msgid "No commissions found for specified dates and/or minimum amount."
@@ -188,35 +182,37 @@ msgstr ""
 #: includes/post-type.php:31 includes/reports.php:13 includes/reports.php:178
 #: includes/settings.php:11 includes/short-codes.php:626
 msgid "Commissions"
-msgstr ""
+msgstr "کمیسیون ها"
 
 #: includes/admin/customers.php:78 includes/admin/widgets.php:113
 #: includes/short-codes.php:300
 msgid "Paid Commissions"
-msgstr ""
+msgstr "کمیسیون های پرداخت شده"
 
 #: includes/admin/customers.php:82
+#, fuzzy
 msgid "View All Paid Commissions"
-msgstr ""
+msgstr "کمیسیون های پرداخت شده"
 
 #: includes/admin/customers.php:83 includes/admin/customers.php:94
 msgid "via %d sale"
 msgid_plural "via %d sales"
 msgstr[0] ""
-msgstr[1] ""
 
 #: includes/admin/customers.php:89 includes/admin/widgets.php:54
 #: includes/short-codes.php:237
 msgid "Unpaid Commissions"
-msgstr ""
+msgstr "کمیسیون های پرداخت نشده"
 
 #: includes/admin/customers.php:93
+#, fuzzy
 msgid "View All Unpaid Commissions"
-msgstr ""
+msgstr "کمیسیون های پرداخت نشده"
 
 #: includes/admin/customers.php:104
+#, fuzzy
 msgid "Commissioned %s"
-msgstr ""
+msgstr "کمیسیون ها"
 
 #: includes/admin/customers.php:111
 msgid "Actions"
@@ -231,8 +227,9 @@ msgid "No %s Found"
 msgstr ""
 
 #: includes/admin/customers.php:148
+#, fuzzy
 msgid "Recent Unpaid Commissions"
-msgstr ""
+msgstr "کمیسیون های پرداخت نشده"
 
 #: includes/admin/customers.php:159
 msgid "ID"
@@ -243,28 +240,29 @@ msgstr ""
 #: includes/short-codes.php:242 includes/short-codes.php:305
 #: includes/short-codes.php:368
 msgid "Item"
-msgstr ""
+msgstr "آیتم"
 
 #: includes/admin/customers.php:175 includes/admin/widgets.php:89
 #: includes/short-codes.php:275
 msgid "No unpaid commissions"
-msgstr ""
+msgstr "کمیسیون پرداخت نشده ای وجود ندارد"
 
 #: includes/admin/edit.php:6 includes/post-type.php:23
 msgid "Edit Commission"
-msgstr ""
+msgstr "ویرایش کمیسیون"
 
 #: includes/admin/edit.php:52
 msgid "Update"
-msgstr ""
+msgstr "به روز رسانی"
 
 #: includes/admin/list.php:14 includes/admin/list.php:60
 msgid "Easy Digital Download Commissions"
-msgstr ""
+msgstr "کمیسیون دانلودها"
 
 #: includes/admin/list.php:64
+#, fuzzy
 msgid "Generate Payout File"
-msgstr ""
+msgstr "ایجاد فایل پرداخت انبوه"
 
 #: includes/admin/list.php:65
 msgid "Close"
@@ -283,8 +281,9 @@ msgid "Minimum"
 msgstr ""
 
 #: includes/admin/list.php:76
+#, fuzzy
 msgid "Generate File"
-msgstr ""
+msgstr "ایجاد فایل پرداخت انبوه"
 
 #: includes/admin/list.php:79
 msgid "This will generate a payout file for review."
@@ -303,120 +302,127 @@ msgid ""
 "Generating a payout file will mark all unpaid commissions as paid. Do you "
 "want to continue?"
 msgstr ""
+"ایجاد یک پرداخت انبوده باعث تغییر حالت کلیه پرداخت نشده ها به پرداخت شده می "
+"شود. ادامه می دهید؟"
 
 #: includes/admin/list.php:113
 msgid "From - mm/dd/yyyy"
-msgstr ""
+msgstr "از - mm/dd/yyyy"
 
 #: includes/admin/list.php:114
 msgid "To - mm/dd/yyyy"
-msgstr ""
+msgstr "تا - mm/dd/yyyy"
 
 #: includes/admin/list.php:119
 msgid "Generate Mass Payment File"
-msgstr ""
+msgstr "ایجاد فایل پرداخت انبوه"
 
 #: includes/admin/list.php:133
+#, fuzzy
 msgid "Showing commissions for: %s"
-msgstr ""
+msgstr "نمایش کمیسیون های پرداخت شده به %s"
 
 #: includes/admin/list.php:135
+#, fuzzy
 msgid "Search Users"
-msgstr ""
+msgstr "جستجوی کمیسیون ها"
 
 #: includes/admin/list.php:143
 msgid "Total Unpaid:"
-msgstr ""
+msgstr "مجموع پرداخت نشده ها:"
 
 #: includes/admin/list.php:204
 msgid "You do not have permission to record commissions"
-msgstr ""
+msgstr "شما مجوز ذخیره کمیسیون ها را ندارید"
 
 #: includes/admin/metabox.php:6
 msgid "Commission"
-msgstr ""
+msgstr "کمیسیون"
 
 #: includes/admin/metabox.php:41
 msgid "Check to enable commissions"
-msgstr ""
+msgstr "فعال کردن کمیسیون ها"
 
 #: includes/admin/metabox.php:46
 msgid "Type"
-msgstr ""
+msgstr "نوع"
 
 #: includes/admin/metabox.php:48
 msgid "Percentage"
-msgstr ""
+msgstr "درصد"
 
 #: includes/admin/metabox.php:49
 msgid "Flat"
-msgstr ""
+msgstr "ثابت"
 
 #: includes/admin/metabox.php:50
 msgid "Select the type of commission(s) to record."
-msgstr ""
+msgstr "نوع کمیسیون برای ذخیره سازی"
 
 #: includes/admin/metabox.php:55
 msgid "User(s)"
-msgstr ""
+msgstr "کاربران"
 
 #: includes/admin/metabox.php:58
 msgid ""
 "Enter the user ID that should receive a commission of each sale. Separate "
 "user IDs by a comma."
 msgstr ""
+"شماره کاربرانی که کمیسیون دریافت خواهند کرد وارد کنید. با کاما از هم جدا کنید"
 
 #: includes/admin/metabox.php:63
 msgid "Rate(s)"
-msgstr ""
+msgstr "نرخ ها"
 
 #: includes/admin/metabox.php:66
 msgid ""
 "Enter the amount the user(s) should receive of each sale. Separate rates by "
 "a comma."
-msgstr ""
+msgstr "مبلغ کمیسیون کاربران برای هر فروش را وارد کنید. با کاما جدا شود"
 
 #: includes/admin/upgrades.php:25
 msgid ""
-"Easy Digital Downloads needs to upgrade the commission records, click "
-"%shere%s to start the upgrade."
+"Easy Digital Downloads needs to upgrade the commission records, click %shere"
+"%s to start the upgrade."
 msgstr ""
+"ایزی‌دیجیتال‌دانلودز نیاز دارد تا رکوردها و اطلاعات کمیسیون را بروزرسانی کند. "
+"برای شروع بروزرسانی %sاینجا%s را کلیک کنید."
 
 #: includes/admin/widgets.php:14
 msgid "Commissions Summary"
-msgstr ""
+msgstr "خلاصه کمیسیون ها"
 
 #: includes/admin/widgets.php:95 includes/short-codes.php:280
 msgid "Total unpaid:"
-msgstr ""
+msgstr "مجموع پرداخت نشده ها:"
 
 #: includes/admin/widgets.php:148 includes/short-codes.php:338
 msgid "No paid commissions"
-msgstr ""
+msgstr "کمیسیون پرداخت شده ای وجود ندارد"
 
 #: includes/admin/widgets.php:154 includes/short-codes.php:343
 msgid "Total paid:"
-msgstr ""
+msgstr "مجموع پرداخت:"
 
 #: includes/admin/widgets.php:170 includes/short-codes.php:439
 msgid "Export Paid Commissions"
-msgstr ""
+msgstr "استخراج کمیسیون های پرداخت شده"
 
 #: includes/admin/widgets.php:175 includes/short-codes.php:445
 msgid "Download CSV"
-msgstr ""
+msgstr "دانلود CSV"
 
 #: includes/class-commissions-export.php:98
 msgid "Product"
-msgstr ""
+msgstr "محصول"
 
 #: includes/commission-functions.php:765
 msgid "No commissions to be paid"
-msgstr ""
+msgstr "کمیسیونی برای پرداخت وجود ندارد"
 
 #: includes/commission-functions.php:803
 msgid "Commission of %s recorded for %s &ndash; <a href=\"%s\">View</a>"
-msgstr ""
+msgstr "کمیسیون %s برای %s – <a href=\"\"%s\"\">مشاهده</a>"
 
 #: includes/commissions-email-field.php:129
 msgid "Please enter a valid email address"
@@ -428,67 +434,67 @@ msgstr ""
 
 #: includes/email-functions.php:21
 msgid "Hello {name},"
-msgstr ""
+msgstr "درود {name},"
 
 #: includes/email-functions.php:21
 msgid "You have made a new sale on %s!"
-msgstr ""
+msgstr "تبریک! یک فروش جدید انجام شده در %s"
 
 #: includes/email-functions.php:22
 msgid "Item sold: "
-msgstr ""
+msgstr "آیتم فروخته شده:"
 
 #: includes/email-functions.php:23
 msgid "Amount: "
-msgstr ""
+msgstr "مبلغ:"
 
 #: includes/email-functions.php:24
 msgid "Commission Rate: "
-msgstr ""
+msgstr "نرخ کمیسیون:"
 
 #: includes/email-functions.php:25
 msgid "Thank you"
-msgstr ""
+msgstr "با تشکر"
 
 #: includes/email-functions.php:59
 msgid "The name of the purchased %s"
-msgstr ""
+msgstr "نام خریداری شده %s"
 
 #: includes/email-functions.php:63
 msgid "The value of the purchased %s"
-msgstr ""
+msgstr "مبلغ خریداری شده %s"
 
 #: includes/email-functions.php:67
 msgid "The date of the purchase"
-msgstr ""
+msgstr "تاریخ خرید"
 
 #: includes/email-functions.php:71
 msgid "The commission rate of the user"
-msgstr ""
+msgstr "نرخ کمیسیون کاربر"
 
 #: includes/email-functions.php:75
 msgid "The first name of the user"
-msgstr ""
+msgstr "نام کوچک کاربر"
 
 #: includes/email-functions.php:79
 msgid "The full name of the user"
-msgstr ""
+msgstr "نام خانوادگی کاربر"
 
 #: includes/email-functions.php:146 includes/settings.php:109
 msgid "New Sale!"
-msgstr ""
+msgstr "فروش جدید!"
 
 #: includes/masspay/class-paypal-masspay.php:87
 msgid "No vendors found to pay. Maybe they haven't set a PayPal address?"
-msgstr ""
+msgstr "فروشنده ای برای پرداخت یافت نشد. شاید آدرس پی پال تنظیم نشده است؟"
 
 #: includes/masspay/class-paypal-masspay.php:130
 msgid "Error: %s"
-msgstr ""
+msgstr "خطا: %s"
 
 #: includes/masspay/class-paypal-masspay.php:146
 msgid "All due commission has been paid for."
-msgstr ""
+msgstr "کلیه کمیسیون های معوق پرداخت شده"
 
 #: includes/masspay/class-paypal-masspay.php:152
 msgid ""
@@ -496,130 +502,142 @@ msgid ""
 "profiles due to an internal error. Commission will still be listed as due. "
 "Please manually mark the commission as paid from the Commissions page."
 msgstr ""
+"کلیه کمیسیون های معوق پرداخت شده، اما امکان تفکیک از پروفایل ها، به دلیل "
+"وجود خطای داخلی نیست. کمیسیون ها همچنان به عنوان معوق باقی مانده است. لطفا "
+"از صفحه کمیسیون ها، به صورت دستی وضعیت کمیسیون ها را به پرداخت شده تغییر "
+"دهید."
 
 #: includes/masspay/class-paypal-masspay.php:178
 msgid ""
 "Hello! A payment was just triggered to mass pay all vendors their due "
 "commission."
 msgstr ""
+"سلام! پرداختی باعث شده است تمامی کمیسیون های معوق فروشندگان به صورت پرداخت "
+"انبوه تسویه گردد."
 
 #: includes/masspay/class-paypal-masspay.php:179
 msgid "Payment status: %s."
-msgstr ""
+msgstr "وضعیت پرداخت: %s."
 
 #: includes/masspay/class-paypal-masspay.php:180
 msgid "Payment message: %s."
-msgstr ""
+msgstr "پیغام پرداخت: %s."
 
 #: includes/masspay/class-paypal-masspay.php:183
 msgid "Payment total: %s."
-msgstr ""
+msgstr "جمع پرداخت: %s."
 
 #: includes/masspay/class-paypal-masspay.php:187
 msgid "EDD Commissions: Mass payments for vendors update"
-msgstr ""
+msgstr "کمیسیون دانلودها: پرداخت انبوه فروشندگان به روز رسانی شد"
 
 #: includes/post-type.php:21
 msgid "Add New"
-msgstr ""
+msgstr "افزودن"
 
 #: includes/post-type.php:22
 msgid "Add New Commission"
-msgstr ""
+msgstr "افزودن کمیسیون"
 
 #: includes/post-type.php:24
 msgid "New Commission"
-msgstr ""
+msgstr "کمیسیون جدید"
 
 #: includes/post-type.php:25
 msgid "All Commissions"
-msgstr ""
+msgstr "همه کمیسیون ها"
 
 #: includes/post-type.php:26
 msgid "View Commission"
-msgstr ""
+msgstr "مشاهده کمیسیون ها"
 
 #: includes/post-type.php:27
 msgid "Search Commissions"
-msgstr ""
+msgstr "جستجوی کمیسیون ها"
 
 #: includes/post-type.php:28
 msgid "No Commissions found"
-msgstr ""
+msgstr "کمیسیونی یافت نشد"
 
 #: includes/post-type.php:29
 msgid "No Commissions found in Trash"
-msgstr ""
+msgstr "کمیسیونی در زباله دان یافت نشد"
 
 #: includes/reports.php:184
 msgid "Commissions Paid Over Time"
-msgstr ""
+msgstr "کمیسیون های اضافه پرداختی"
 
 #: includes/reports.php:189
 msgid "Showing commissions paid to %s"
-msgstr ""
+msgstr "نمایش کمیسیون های پرداخت شده به %s"
 
 #: includes/reports.php:190
 msgid "clear"
-msgstr ""
+msgstr "پاک کردن"
 
 #: includes/reports.php:199
 msgid "Total commissions for period shown: "
-msgstr ""
+msgstr "مجموع کمیسیون ها در این دوره:"
 
 #: includes/scheduled-payouts.php:81
 msgid "Once every two weeks"
-msgstr ""
+msgstr "هر دو هفته یکبار"
 
 #: includes/scheduled-payouts.php:86
 msgid "Once a month"
-msgstr ""
+msgstr "هر ماه"
 
 #: includes/settings.php:28
 msgid "Subtotal (default)"
-msgstr ""
+msgstr "جمع کل (پیش فرض)"
 
 #: includes/settings.php:29
 msgid "Total with Taxes"
-msgstr ""
+msgstr "جمع کل با مالیات"
 
 #: includes/settings.php:30
 msgid "Total without Taxes"
-msgstr ""
+msgstr "جمع کل بدون مالیات"
 
 #: includes/settings.php:36
 msgid "Commissions Settings"
-msgstr ""
+msgstr "تنظیمات کمیسیون ها"
 
 #: includes/settings.php:43
 msgid "Default rate"
-msgstr ""
+msgstr "نرخ پیش فرض"
 
 #: includes/settings.php:44
 msgid ""
-"Enter the default rate recipients should receive. This can be overwritten "
-"on a per-product basis. 10 = 10%"
+"Enter the default rate recipients should receive. This can be overwritten on "
+"a per-product basis. 10 = 10%"
 msgstr ""
+"نرخ پیش فرض کمیسیون فروش. این نرخ می تواند بر اساس هر محصول رونویسی شود. 10 "
+"= 10%"
 
 #: includes/settings.php:50
 msgid "Calculation Base"
-msgstr ""
+msgstr "مبنای محاسبه"
 
 #: includes/settings.php:51
 msgid ""
 "Should commissions be calculated from the subtotal (before taxes and "
 "discounts) or from the total purchase amount (after taxes and discounts)? "
 msgstr ""
+"کمیسیون از جمع کل (قبل از مالیات و تخفیف) و یا از مقدار کل خرید (بعد از "
+"مالیات و تخفیف) محاسبه شود؟"
 
 #: includes/settings.php:57
 msgid "Instant Pay Commmissions"
-msgstr ""
+msgstr "پرداخت فوری کمیسیون ها"
 
 #: includes/settings.php:58
 msgid ""
 "If checked and <a href=\"%s\">PayPal Adaptive Payments</a> gateway is "
 "installed, EDD will automatically pay commissions at the time of purchase"
 msgstr ""
+"اگر فعال شود و <a href=\"%s\"> درگاه پی پال </a> نصب شده باشد، کمیسیون به "
+"صورت خودکار در زمان خرید به کاربر پرداخت می شود."
 
 #: includes/settings.php:66
 msgid "Shipping Fees"
@@ -643,89 +661,102 @@ msgstr ""
 
 #: includes/settings.php:98
 msgid "Commission Notifications"
-msgstr ""
+msgstr "اطلاعیه های کمیسیون"
 
 #: includes/settings.php:105
 msgid "Email Subject"
-msgstr ""
+msgstr "عنوان"
 
 #: includes/settings.php:106
 msgid "Enter the subject for commission emails."
-msgstr ""
+msgstr "عنوان ایمیل کمیسیون را وارد کنید"
 
 #: includes/settings.php:113
 msgid "Email Body"
-msgstr ""
+msgstr "محتوا"
 
 #: includes/settings.php:114
 msgid ""
 "Enter the content for commission emails. HTML is accepted. Available "
 "template tags:"
 msgstr ""
+"محتوای ایمیل کمیسیون را وارد کنید. کدهای HTML پذیرفته شده است. تگ های قابل "
+"استفاده:"
 
 #: includes/short-codes.php:43
+#, fuzzy
 msgid "Your Products"
-msgstr ""
+msgstr "محصول"
 
 #: includes/short-codes.php:46
+#, fuzzy
 msgid "%s's Products"
-msgstr ""
+msgstr "محصول"
 
 #: includes/short-codes.php:56 includes/short-codes.php:590
 msgid "Sales"
-msgstr ""
+msgstr "فروش ها"
 
 #: includes/short-codes.php:73
 msgid "No item"
-msgstr ""
+msgstr "بدون آیتم"
 
 #: includes/short-codes.php:126
+#, fuzzy
 msgid "Commissions Overview"
-msgstr ""
+msgstr "کمیسیون های اضافه پرداختی"
 
 #: includes/short-codes.php:129
+#, fuzzy
 msgid "Unpaid Earnings"
-msgstr ""
+msgstr "کمیسیون های پرداخت نشده"
 
 #: includes/short-codes.php:130
 msgid "Paid Earnings"
 msgstr ""
 
 #: includes/short-codes.php:131
+#, fuzzy
 msgid "Revoked Earnings"
-msgstr ""
+msgstr "کمیسیون های لفو شده"
 
 #: includes/short-codes.php:142 includes/short-codes.php:162
+#, fuzzy
 msgid "No commissions found"
-msgstr ""
+msgstr "کمیسیونی یافت نشد"
 
 #: includes/short-codes.php:149
+#, fuzzy
 msgid "Unpaid Sales"
-msgstr ""
+msgstr "پرداخت نشده"
 
 #: includes/short-codes.php:150
+#, fuzzy
 msgid "Paid Sales"
-msgstr ""
+msgstr "فروش ها"
 
 #: includes/short-codes.php:151
+#, fuzzy
 msgid "Revoked Sales"
-msgstr ""
+msgstr "لغو شده"
 
 #: includes/short-codes.php:363
 msgid "Revoked Commissions"
-msgstr ""
+msgstr "کمیسیون های لفو شده"
 
 #: includes/short-codes.php:401
 msgid "No revoked commissions"
-msgstr ""
+msgstr "کمیسیون لغو شده ای وجود ندارد"
 
 #: includes/short-codes.php:406
+#, fuzzy
 msgid "Total revoked:"
-msgstr ""
+msgstr "مجموع پرداخت:"
 
 #: includes/short-codes.php:520
+#, fuzzy
 msgid "Commission Stats"
-msgstr ""
+msgstr "تنظیمات کمیسیون ها"
 
 #: includes/short-codes.php:528
 msgid "Filter"
@@ -736,8 +767,9 @@ msgid "Earnings"
 msgstr ""
 
 #: includes/short-codes.php:627
+#, fuzzy
 msgid "PayPal Email Address"
-msgstr ""
+msgstr "ایمیل پی پال"
 
 #: includes/short-codes.php:646
 msgid "PayPal email address must be a valid email address"
@@ -745,35 +777,42 @@ msgstr ""
 
 #: includes/user-meta.php:5
 msgid "Easy Digital Downloads Commissions"
-msgstr ""
+msgstr "کمیسیون های دانلود"
 
 #: includes/user-meta.php:9
 msgid "User's PayPal Email"
-msgstr ""
+msgstr "ایمیل پی پال کاربر"
 
 #: includes/user-meta.php:12
 msgid ""
-"If the user's PayPal address is different than their account email, enter "
-"it here."
+"If the user's PayPal address is different than their account email, enter it "
+"here."
 msgstr ""
+"اگر ایمیل پی پال کاربر با ایمیل وارد شده هنگام ثبت نام متفاوت است این فیلد "
+"را پر کنید"
 
 #: includes/user-meta.php:16
 msgid "User's Global Rate"
-msgstr ""
+msgstr "نرخ پایه کاربران"
 
 #: includes/user-meta.php:19
 msgid ""
-"Enter a global commission rate for this user. If a rate is not specified "
-"for a product, this rate will be used."
+"Enter a global commission rate for this user. If a rate is not specified for "
+"a product, this rate will be used."
 msgstr ""
+"نرخ پایه کمیسیون های کاربر را وارد نمایید. در صورتی که برای محصول نرخی در "
+"نظر گرفته نشود این نرخ استفاده می شود"
 
 #: includes/user-meta.php:24
 msgid "PayPal Email"
-msgstr ""
+msgstr "ایمیل پی پال"
 
 #: includes/user-meta.php:27
-msgid "If your PayPal address is different than your account email, enter it here."
+msgid ""
+"If your PayPal address is different than your account email, enter it here."
 msgstr ""
+"اگر ایمیل پی پال کاربر با ایمیل وارد شده هنگام ثبت نام متفاوت است این فیلد "
+"را پر کنید"
 
 #: tests/helpers/class-helper-payment.php:131
 #: tests/helpers/class-helper-payment.php:234
@@ -788,6 +827,8 @@ msgid ""
 "Record commisions automatically for users in your site when downloads are "
 "sold"
 msgstr ""
+"هرگاه محصولی در سایت شما به فروش برسد ، اطلاعات کمیسیونی کاربران به صورت "
+"خودکار ثبت خواهد شد"
 
 #: includes/EDD_C_List_Table.php:129 includes/EDD_C_List_Table.php:130
 #: includes/EDD_C_List_Table.php:131 includes/EDD_C_List_Table.php:132
@@ -796,16 +837,20 @@ msgid "(%d)"
 msgstr ""
 
 #: includes/commissions-email-field.php:44
+#, fuzzy
 msgctxt "FES Field title translation"
 msgid "PayPal Email"
-msgstr ""
+msgstr "ایمیل پی پال"
 
 #: includes/post-type.php:19
 msgctxt "post type general name"
 msgid "Commissions"
-msgstr ""
+msgstr "کمیسیون ها"
 
 #: includes/post-type.php:20
 msgctxt "post type singular name"
 msgid "Commission"
-msgstr ""
+msgstr "کمیسیون"
+
+#~ msgid "Your Items"
+#~ msgstr "آیتم های شما"
