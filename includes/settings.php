@@ -100,21 +100,21 @@ function eddc_settings_emails( $settings ) {
 			'type'    => 'header',
 			'size'    => 'regular'
 		),
-        array(
-            'id'    => 'edd_commissions_email_subject',
-            'name'  => __( 'Email Subject', 'eddc' ),
-            'desc'  => __( 'Enter the subject for commission emails.', 'eddc' ),
-            'type'  => 'text',
-            'size'  => 'regular',
-            'std'   => __( 'New Sale!', 'eddc' )
-        ),
-        array(
-            'id'    => 'edd_commissions_email_message',
-            'name'  => __( 'Email Body', 'eddc' ),
-            'desc'  => __( 'Enter the content for commission emails. HTML is accepted. Available template tags:', 'eddc' ) . '<br />' . eddc_display_email_template_tags(),
-            'type'  => 'rich_editor',
-            'std'   => eddc_get_email_default_body()
-        )
+		array(
+			'id'    => 'edd_commissions_email_subject',
+			'name'  => __( 'Email Subject', 'eddc' ),
+			'desc'  => __( 'Enter the subject for commission emails.', 'eddc' ),
+			'type'  => 'text',
+			'size'  => 'regular',
+			'std'   => __( 'New Sale!', 'eddc' )
+		),
+		array(
+			'id'    => 'edd_commissions_email_message',
+			'name'  => __( 'Email Body', 'eddc' ),
+			'desc'  => __( 'Enter the content for commission emails. HTML is accepted. Available template tags:', 'eddc' ) . '<br />' . eddc_display_email_template_tags(),
+			'type'  => 'rich_editor',
+			'std'   => eddc_get_email_default_body()
+		)
 	);
 
 	return array_merge( $settings, $commission_settings );
