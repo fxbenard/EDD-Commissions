@@ -101,6 +101,12 @@ function eddc_settings_emails( $settings ) {
 			'size'    => 'regular'
 		),
 		array(
+			'id'    => 'edd_commissions_disable_sale_alerts',
+			'name'  => __( 'Disable New Sale Alerts', 'eddc' ),
+			'desc'  => __( 'Check this box to disable the New Sale notification emails sent to commission recipients.', 'eddc' ),
+			'type'  => 'checkbox'
+		),
+		array(
 			'id'    => 'edd_commissions_email_subject',
 			'name'  => __( 'Email Subject', 'eddc' ),
 			'desc'  => __( 'Enter the subject for commission emails.', 'eddc' ),
