@@ -138,7 +138,10 @@ function eddc_parse_template_tags( $message, $download_id, $commission_id, $comm
  */
 
 function eddc_email_alert( $user_id, $commission_amount, $rate, $download_id, $commission_id ) {
-	global $edd_options;
+
+    if( edd_get_option( 'edd_commissions_disable_sale_alerts', false ) ) {
+        return;
+    }
 
 	/* send an email alert of the sale */
 	$user      = get_userdata( $user_id );
@@ -159,7 +162,7 @@ function eddc_email_alert( $user_id, $commission_amount, $rate, $download_id, $c
 
 		$from_name = apply_filters( 'eddc_email_from_name', $from_name, $user_id, $commission_amount, $rate, $download_id );
 
-		$from_email = isset( $edd_options['from_email'] ) ? $edd_options['from_email'] : get_option( 'admin_email' );
+		$from_email = edd_get_option( 'from_email', get_option( 'admin_email' ) );
 		$from_email = apply_filters( 'eddc_email_from_email', $from_email, $user_id, $commission_amount, $rate, $download_id );
 
 		$headers = "From: " . stripslashes_deep( html_entity_decode( $from_name, ENT_COMPAT, 'UTF-8' ) ) . " <$from_email>\r\n";

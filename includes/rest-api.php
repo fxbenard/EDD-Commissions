@@ -58,12 +58,12 @@ class EDDC_REST_API {
                 $commission_meta = get_post_meta( $commission->ID, '_edd_commission_info', true );
                 $commission_meta = get_post_meta( $commission->ID, '_edd_commission_info', true );
                 $renewal         = (bool) get_post_meta( $commission->ID, '_edd_commission_is_renewal', true );
-               
+
                 $data['commissions'][] = array(
                     'amount'   => edd_sanitize_amount( $commission_meta['amount'] ),
 					'rate'     => $commission_meta['rate'],
 					'currency' => $commission_meta['currency'],
-					'item'     => get_the_title( $download_id ),
+					'item'     => get_the_title( get_post_meta( $commission->ID, '_download_id', true ) ),
 					'status'   => eddc_get_commission_status( $commission->ID ),
 					'date'     => $commission->post_date,
 					'renewal'  => $renewal ? 1 : 0
@@ -152,7 +152,7 @@ class EDDC_REST_API {
 
 		return $data;
 
-	}	
+	}
 
 }
 new EDDC_REST_API;
